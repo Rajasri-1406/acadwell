@@ -1,0 +1,107 @@
+/* ===== STUDENT WELLNESS PAGE (Tailwind Themed) ===== */
+.student-wellness-page {
+  @apply min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 text-white p-6 overflow-y-auto font-sans;
+
+}
+
+/* --- Header --- */
+.wellness-title {
+  @apply text-3xl font-semibold text-purple-300 text-center mb-8 drop-shadow-lg;
+}
+
+/* --- Summary Cards --- */
+.summary-grid {
+  @apply grid gap-6 mb-8 sm:grid-cols-2 lg:grid-cols-4;
+}
+
+.summary-card {
+  @apply bg-black/30 backdrop-blur-xl rounded-xl p-6 border border-white/10 shadow-lg text-center transition-all duration-300 hover:bg-white/10 hover:-translate-y-1;
+}
+
+.summary-icon {
+  @apply text-purple-400 w-8 h-8 mx-auto mb-2;
+}
+
+.summary-card h3 {
+  @apply text-sm font-semibold text-purple-200;
+}
+
+.summary-card p {
+  @apply text-2xl font-bold text-emerald-400 mt-1;
+}
+
+/* --- Section Titles --- */
+.section {
+  @apply mb-10;
+}
+
+.section-title {
+  @apply text-xl font-semibold text-purple-300 mb-4;
+}
+
+/* --- Mood Tracker --- */
+.mood-card {
+  @apply bg-black/30 backdrop-blur-xl rounded-xl p-6 border border-white/10 shadow-lg mb-8;
+}
+
+.mood-status {
+  @apply flex items-center gap-3 mb-4;
+}
+
+.mood-status span {
+  @apply text-emerald-400 font-semibold;
+}
+
+.mood-icon {
+  @apply w-7 h-7;
+}
+
+.good {
+  @apply text-emerald-400;
+}
+.average {
+  @apply text-yellow-400;
+}
+.bad {
+  @apply text-red-400;
+}
+
+/* --- Charts --- */
+.chart-card {
+  @apply bg-black/30 backdrop-blur-xl rounded-xl p-6 border border-white/10 shadow-lg mb-8;
+}
+
+/* --- Achievements --- */
+.achievement-grid {
+  @apply grid gap-6 sm:grid-cols-2 lg:grid-cols-3;
+}
+
+.achievement-card {
+  @apply bg-black/30 backdrop-blur-xl rounded-xl p-6 border border-white/10 shadow-lg text-center transition-all duration-300 hover:bg-white/10 hover:-translate-y-1;
+}
+
+.achievement-icon {
+  @apply text-purple-400 w-8 h-8 mx-auto mb-2;
+}
+
+.achievement-card h3 {
+  @apply text-purple-300 font-semibold mb-1;
+}
+
+.achievement-card p {
+  @apply text-gray-300 text-sm;
+}
+
+/* --- Scrollbar --- */
+.student-wellness-page::-webkit-scrollbar {
+  width: 8px;
+}
+
+.student-wellness-page::-webkit-scrollbar-thumb {
+  background: linear-gradient(#a855f7, #7e22ce);
+  border-radius: 10px;
+}
+
+.student-wellness-page::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+}

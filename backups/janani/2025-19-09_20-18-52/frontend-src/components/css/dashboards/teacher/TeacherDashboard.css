@@ -1,0 +1,633 @@
+/* TeacherDashboard.css - Clean Professional 2-Card Layout */
+
+/* ===== MAIN DASHBOARD WRAPPER ===== */
+.teacher-dashboard-wrapper {
+  @apply flex min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 text-white;
+}
+
+.teacher-dashboard-main {
+  @apply flex flex-col flex-1;
+}
+
+.teacher-dashboard-content {
+  @apply grid grid-cols-1 lg:grid-cols-2 gap-6 p-6;
+}
+
+/* ===== SIDEBAR STYLES ===== */
+.teacher-sidebar {
+  @apply flex flex-col h-screen w-64 bg-black/30 backdrop-blur-xl border-r border-white/10 p-6;
+}
+
+.sidebar-header {
+  @apply mb-10;
+}
+
+.sidebar-logo {
+  @apply text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent;
+}
+
+.teacher-badge {
+  @apply inline-block px-3 py-1 text-xs font-medium bg-gradient-to-r from-blue-500 to-purple-600 rounded-full text-white mt-2;
+}
+
+.sidebar-nav ul {
+  @apply space-y-4;
+}
+
+.nav-item {
+  @apply flex items-center space-x-3 text-gray-300 hover:text-white cursor-pointer transition-colors px-2 py-2 rounded-lg hover:bg-white/10;
+}
+
+.nav-item.active {
+  @apply bg-white/10 text-white;
+}
+
+.nav-icon {
+  @apply w-5 h-5;
+}
+
+/* ===== TOPBAR STYLES ===== */
+.teacher-topbar {
+  @apply h-16 flex items-center justify-between px-6 bg-black/20 backdrop-blur-lg border-b border-white/10;
+}
+
+.topbar-left {
+  @apply flex items-center;
+}
+
+.search-wrapper {
+  @apply relative w-80;
+}
+
+.search-icon {
+  @apply absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400;
+}
+
+.search-input {
+  @apply w-full pl-10 pr-4 py-2 rounded-xl bg-white/5 border border-white/10 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500;
+}
+
+.topbar-right {
+  @apply flex items-center space-x-4;
+}
+
+.icon-btn {
+  @apply relative p-2 rounded-full bg-white/5 hover:bg-white/10 transition-colors;
+}
+
+.notification-btn {
+  @apply relative;
+}
+
+.notification-badge {
+  @apply absolute -top-1 -right-1 w-5 h-5 bg-red-500 text-white text-xs rounded-full flex items-center justify-center font-bold;
+}
+
+.icon {
+  @apply w-5 h-5 text-gray-300;
+}
+
+.profile-btn {
+  @apply flex items-center space-x-2 rounded-full bg-gradient-to-r from-blue-500 to-purple-600 p-1 hover:scale-105 transition-transform;
+}
+
+.profile-icon {
+  @apply w-8 h-8 text-white;
+}
+
+.profile-text {
+  @apply text-white font-medium pr-3;
+}
+
+/* ===== BASE CARD STYLES ===== */
+.dashboard-card {
+  @apply bg-black/30 backdrop-blur-xl border border-white/10 rounded-2xl p-6 shadow-lg transition-all duration-300 hover:scale-[1.02];
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+.card-title {
+  @apply text-xl font-semibold mb-2 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent;
+}
+
+.card-subtitle {
+  @apply text-gray-300 text-sm mb-4;
+}
+
+/* ===== WELCOME CARD STYLES ===== */
+.welcome-card {
+  @apply border-blue-500/30 col-span-1 lg:col-span-2 flex flex-col justify-between;
+}
+
+.welcome-content {
+  @apply mb-4;
+}
+
+.welcome-title {
+  @apply text-2xl font-bold mb-2 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent;
+}
+
+.welcome-subtitle {
+  @apply text-gray-300 text-base;
+}
+
+.quick-actions {
+  @apply flex gap-4;
+}
+
+.quick-action-btn {
+  @apply flex items-center space-x-2 px-4 py-2 rounded-xl font-semibold text-white transition-all duration-200 hover:scale-105;
+}
+
+.create-class {
+  @apply bg-gradient-to-r from-blue-500 to-blue-600;
+}
+
+.post-assignment {
+  @apply bg-gradient-to-r from-green-500 to-green-600;
+}
+
+.check-queries {
+  @apply bg-gradient-to-r from-orange-500 to-orange-600;
+}
+
+.action-icon {
+  @apply w-4 h-4;
+}
+
+/* ===== CLASSES CARD STYLES ===== */
+.classes-card {
+  @apply border-blue-500/30;
+}
+
+.classes-list {
+  @apply space-y-3 mb-4;
+}
+
+.class-item {
+  @apply flex items-center justify-between bg-white/5 rounded-lg p-3 hover:bg-white/10 transition-colors;
+}
+
+.class-item.class-blue {
+  @apply border-l-4 border-blue-500;
+}
+
+.class-item.class-green {
+  @apply border-l-4 border-green-500;
+}
+
+.class-item.class-purple {
+  @apply border-l-4 border-purple-500;
+}
+
+.class-info {
+  @apply flex-1;
+}
+
+.class-name {
+  @apply font-semibold text-white mb-1;
+}
+
+.class-students {
+  @apply text-sm text-gray-400;
+}
+
+.class-action-btn {
+  @apply p-2 rounded-lg bg-white/10 hover:bg-white/20 transition-colors;
+}
+
+.view-all-btn {
+  @apply w-full py-2 rounded-lg bg-gradient-to-r from-blue-500 to-indigo-600 font-medium text-white hover:shadow-md hover:scale-105 transition-all duration-200;
+}
+
+/* ===== ASSIGNMENTS CARD STYLES ===== */
+.assignments-card {
+  @apply border-green-500/30;
+}
+
+.assignments-list {
+  @apply space-y-3 mb-4;
+}
+
+.assignment-item {
+  @apply flex items-center justify-between bg-white/5 rounded-lg p-3;
+}
+
+.assignment-info {
+  @apply flex-1;
+}
+
+.assignment-title {
+  @apply font-semibold text-white mb-1;
+}
+
+.assignment-meta {
+  @apply text-sm text-gray-400;
+}
+
+.assignment-progress {
+  @apply flex items-center;
+}
+
+.progress-circle {
+  @apply w-10 h-10 rounded-full bg-gradient-to-r from-green-400 to-emerald-500 flex items-center justify-center;
+}
+
+.progress-text {
+  @apply text-xs font-bold text-white;
+}
+
+.manage-btn {
+  @apply w-full py-2 rounded-lg bg-gradient-to-r from-green-500 to-emerald-600 font-medium text-white hover:shadow-md hover:scale-105 transition-all duration-200;
+}
+
+/* ===== QUERIES CARD STYLES ===== */
+.queries-card {
+  @apply border-orange-500/30;
+}
+
+.queries-list {
+  @apply space-y-3 mb-4;
+}
+
+.query-item {
+  @apply bg-white/5 rounded-lg p-3 hover:bg-white/10 transition-colors;
+}
+
+.query-header {
+  @apply flex items-center justify-between mb-2;
+}
+
+.query-student {
+  @apply font-medium text-orange-400 text-sm;
+}
+
+.query-class {
+  @apply text-xs bg-orange-500/20 text-orange-300 px-2 py-1 rounded;
+}
+
+.query-text {
+  @apply text-gray-200 mb-2 text-sm leading-relaxed;
+}
+
+.query-actions {
+  @apply flex items-center justify-between;
+}
+
+.reply-btn {
+  @apply flex items-center space-x-1 px-3 py-1 rounded bg-gradient-to-r from-orange-500 to-red-500 text-white text-xs font-medium hover:shadow-md hover:scale-105 transition-all duration-200;
+}
+
+.status-indicator {
+  @apply flex items-center;
+}
+
+.status-indicator.replied {
+  @apply text-green-400;
+}
+
+.status-indicator.pending {
+  @apply text-yellow-400;
+}
+
+.view-all-queries-btn {
+  @apply w-full py-2 rounded-lg bg-gradient-to-r from-orange-500 to-red-600 font-medium text-white hover:shadow-md hover:scale-105 transition-all duration-200;
+}
+
+/* ===== ANALYTICS CARD STYLES ===== */
+.analytics-card {
+  @apply border-purple-500/30;
+}
+
+.analytics-content {
+  @apply space-y-3 mb-4;
+}
+
+.participation-item {
+  @apply space-y-2;
+}
+
+.participation-info {
+  @apply flex justify-between items-center;
+}
+
+.participation-rate {
+  @apply font-semibold text-purple-400;
+}
+
+.participation-bar {
+  @apply w-full h-2 bg-white/10 rounded-full overflow-hidden;
+}
+
+.participation-fill {
+  @apply h-full bg-gradient-to-r from-purple-400 to-indigo-500 transition-all duration-300;
+}
+
+.detailed-analytics-btn {
+  @apply w-full flex items-center justify-center space-x-2 py-2 rounded-lg bg-gradient-to-r from-purple-500 to-indigo-600 font-medium text-white hover:shadow-md hover:scale-105 transition-all duration-200;
+}
+
+/* ===== AT-RISK STUDENTS STYLES ===== */
+.at-risk-card {
+  @apply border-red-500/30;
+}
+
+.at-risk-list {
+  @apply space-y-3 mb-4;
+}
+
+.at-risk-item {
+  @apply flex items-center justify-between bg-red-500/10 rounded-lg p-3 border border-red-500/20;
+}
+
+.student-info {
+  @apply flex flex-col;
+}
+
+.student-name {
+  @apply font-medium text-white text-sm;
+}
+
+.student-issue {
+  @apply text-xs text-red-300;
+}
+
+.severity-badge {
+  @apply flex items-center space-x-1 px-2 py-1 rounded-full text-xs font-medium;
+}
+
+.severity-badge.high {
+  @apply bg-red-500/20 text-red-400;
+}
+
+.severity-badge.medium {
+  @apply bg-yellow-500/20 text-yellow-400;
+}
+
+.severity-badge.low {
+  @apply bg-green-500/20 text-green-400;
+}
+
+.view-all-risk-btn {
+  @apply w-full py-2 rounded-lg bg-gradient-to-r from-red-500 to-pink-600 font-medium text-white hover:shadow-md hover:scale-105 transition-all duration-200;
+}
+
+/* ===== NOTIFICATIONS STYLES ===== */
+.notifications-card {
+  @apply border-purple-500/30;
+}
+
+.notifications-list {
+  @apply space-y-3 mb-4;
+}
+
+.notification-item {
+  @apply flex items-center space-x-3 bg-white/5 rounded-lg p-2 hover:bg-white/10 transition-colors;
+}
+
+.notification-icon {
+  @apply w-4 h-4 text-purple-400 flex-shrink-0;
+}
+
+.notification-content {
+  @apply flex-1;
+}
+
+.notification-text {
+  @apply text-gray-200 text-sm mb-1;
+}
+
+.notification-time {
+  @apply text-xs text-gray-400;
+}
+
+.view-all-notifications-btn {
+  @apply w-full py-2 rounded-lg bg-gradient-to-r from-purple-500 to-indigo-600 font-medium text-white hover:shadow-md hover:scale-105 transition-all duration-200;
+}
+
+/* ===== COURSE RESOURCES STYLES ===== */
+.resources-card {
+  @apply border-emerald-500/30;
+}
+
+.resources-actions {
+  @apply flex space-x-3 mb-4;
+}
+
+.resource-action {
+  @apply flex items-center space-x-2 px-3 py-2 rounded-lg font-medium text-white transition-all duration-200 hover:scale-105 text-sm;
+}
+
+.upload-notes {
+  @apply bg-gradient-to-r from-emerald-500 to-teal-600;
+}
+
+.manage-resources {
+  @apply bg-gradient-to-r from-teal-500 to-cyan-600;
+}
+
+.recent-uploads {
+  @apply space-y-2;
+}
+
+.recent-title {
+  @apply text-sm font-semibold text-gray-300 mb-3;
+}
+
+.uploads-list {
+  @apply space-y-2;
+}
+
+.upload-item {
+  @apply flex items-center bg-white/5 rounded p-2 hover:bg-white/10 transition-colors;
+}
+
+.upload-icon {
+  @apply w-4 h-4 text-emerald-400 mr-2 flex-shrink-0;
+}
+
+.upload-name {
+  @apply text-sm text-gray-200 truncate;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 1024px) {
+  .teacher-dashboard-content {
+    @apply grid-cols-1 gap-4;
+  }
+  
+  .welcome-card {
+    @apply col-span-1;
+  }
+}
+
+@media (max-width: 768px) {
+  .teacher-sidebar {
+    @apply hidden;
+  }
+
+  .teacher-dashboard-content {
+    @apply p-4;
+  }
+
+  .search-wrapper {
+    @apply w-56;
+  }
+
+  .quick-actions {
+    @apply flex-col space-y-2;
+  }
+  
+  .quick-action-btn {
+    @apply justify-center;
+  }
+  
+  .welcome-title {
+    @apply text-xl;
+  }
+}
+
+@media (max-width: 640px) {
+  .search-wrapper {
+    @apply hidden;
+  }
+
+  .teacher-topbar {
+    @apply px-4;
+  }
+
+  .dashboard-card {
+    @apply p-4;
+  }
+
+  .profile-text {
+    @apply hidden;
+  }
+
+  .card-title {
+    @apply text-lg;
+  }
+  
+  .assignment-item,
+  .query-item,
+  .at-risk-item,
+  .notification-item {
+    @apply flex-col items-start space-y-1;
+  }
+}
+
+/* ===== HOVER EFFECTS ===== */
+.dashboard-card:hover {
+  @apply shadow-xl;
+}
+
+.welcome-card:hover {
+  box-shadow: 0 0 30px rgba(59, 130, 246, 0.2);
+}
+
+.classes-card:hover {
+  box-shadow: 0 0 30px rgba(59, 130, 246, 0.2);
+}
+
+.assignments-card:hover {
+  box-shadow: 0 0 30px rgba(34, 197, 94, 0.2);
+}
+
+.queries-card:hover {
+  box-shadow: 0 0 30px rgba(249, 115, 22, 0.2);
+}
+
+.analytics-card:hover {
+  box-shadow: 0 0 30px rgba(168, 85, 247, 0.2);
+}
+
+.at-risk-card:hover {
+  box-shadow: 0 0 30px rgba(239, 68, 68, 0.2);
+}
+
+.notifications-card:hover {
+  box-shadow: 0 0 30px rgba(168, 85, 247, 0.2);
+}
+
+.resources-card:hover {
+  box-shadow: 0 0 30px rgba(16, 185, 129, 0.2);
+}
+
+/* ===== FOCUS STYLES ===== */
+.quick-action-btn:focus,
+.view-all-btn:focus,
+.manage-btn:focus,
+.reply-btn:focus,
+.detailed-analytics-btn:focus,
+.view-all-risk-btn:focus,
+.view-all-notifications-btn:focus,
+.view-all-queries-btn:focus,
+.resource-action:focus,
+.search-input:focus {
+  @apply outline-none ring-2 ring-offset-2 ring-offset-transparent;
+}
+
+.create-class:focus {
+  @apply ring-blue-500;
+}
+
+.post-assignment:focus {
+  @apply ring-green-500;
+}
+
+.check-queries:focus {
+  @apply ring-orange-500;
+}
+
+/* ===== CUSTOM SCROLLBAR ===== */
+.notifications-list::-webkit-scrollbar,
+.queries-list::-webkit-scrollbar,
+.at-risk-list::-webkit-scrollbar,
+.assignments-list::-webkit-scrollbar,
+.uploads-list::-webkit-scrollbar {
+  width: 4px;
+}
+
+.notifications-list::-webkit-scrollbar-track,
+.queries-list::-webkit-scrollbar-track,
+.at-risk-list::-webkit-scrollbar-track,
+.assignments-list::-webkit-scrollbar-track,
+.uploads-list::-webkit-scrollbar-track {
+  @apply bg-white/5;
+}
+
+.notifications-list::-webkit-scrollbar-thumb,
+.queries-list::-webkit-scrollbar-thumb,
+.at-risk-list::-webkit-scrollbar-thumb,
+.assignments-list::-webkit-scrollbar-thumb,
+.uploads-list::-webkit-scrollbar-thumb {
+  @apply bg-white/20 rounded-full;
+}
+
+.notifications-list::-webkit-scrollbar-thumb:hover,
+.queries-list::-webkit-scrollbar-thumb:hover,
+.at-risk-list::-webkit-scrollbar-thumb:hover,
+.assignments-list::-webkit-scrollbar-thumb:hover,
+.uploads-list::-webkit-scrollbar-thumb:hover {
+  @apply bg-white/30;
+}
+
+/* ===== ADDITIONAL UTILITIES ===== */
+.text-truncate {
+  @apply truncate;
+}
+
+.bg-glass {
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+/* ===== LOADING STATES ===== */
+.dashboard-card.loading {
+  @apply animate-pulse;
+}
+
+.dashboard-card.loading .card-title,
+.dashboard-card.loading .card-subtitle {
+  @apply bg-gray-400 text-transparent bg-clip-text;
+}

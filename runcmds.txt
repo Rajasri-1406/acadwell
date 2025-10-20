@@ -1,0 +1,4 @@
+frontend  npm run dev
+backend   venv\Scripts\activate
+           python run.py
+db        mongosh

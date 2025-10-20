@@ -1,0 +1,10 @@
+/* src/components/css/dashboards/teacher/TeacherProfile.css */
+
+/* Small custom overrides, since Tailwind handles most styling */
+.teacher-profile-wrapper {
+  @apply flex justify-center items-center p-6;
+}
+
+.teacher-avatar {
+  @apply w-24 h-24 mx-auto rounded-full bg-indigo-600 text-white flex items-center justify-center text-3xl font-bold shadow-lg;
+}

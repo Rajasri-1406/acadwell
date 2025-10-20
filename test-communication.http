@@ -1,0 +1,22 @@
+### Test Backend Health
+GET http://localhost:5000/health
+Content-Type: application/json
+
+### Test Anonymous Login
+POST http://localhost:5000/api/auth/anon
+Content-Type: application/json
+
+### Test Get Questions
+GET http://localhost:5000/api/questions
+Content-Type: application/json
+
+### Test Create Question
+POST http://localhost:5000/api/questions
+Content-Type: application/json
+
+{
+  "title": "Test Question",
+  "content": "This is a test question from REST client",
+  "tags": ["test", "demo"],
+  "anonymous_id": "test-user"
+}
