@@ -21,8 +21,3 @@ def serve_frontend(path):
         return send_from_directory(build_dir, path)
     else:
         return send_from_directory(build_dir, "index.html")
-
-# 5. Run app using SocketIO with Eventlet
-if __name__ == "__main__":
-    port = int(os.getenv("PORT", 5000))
-    socketio.run(app, host="0.0.0.0", port=port)
