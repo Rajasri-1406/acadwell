@@ -11,7 +11,8 @@ import {
   Clock,
 } from "lucide-react";
 
-const API_BASE = "http://localhost:5000/api/community";
+const API_BASE = "https://acadwell-backend-7ufj.onrender.com/api/community";
+
 
 const Community = () => {
   const [posts, setPosts] = useState([]);
