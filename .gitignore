@@ -1,44 +1,19 @@
-# Node modules
-node_modules/
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-
 # Python
 __pycache__/
 *.pyc
-*.pyo
-*.pyd
-.Python
-venv/
-env/
+instance/
 .env
-.venv/
-pip-log.txt
 
-# Database
-*.db
-*.sqlite3
-mongod.log
-
-# IDE
-.vscode/settings.json
-.vscode/launch.json
-*.swp
-*.swo
-
-# OS
-.DS_Store
-Thumbs.db
-desktop.ini
-
-# Build outputs
+# Node / React
+frontend/node_modules/
+frontend/.env
 build/
 dist/
-*.log
 
-# Secrets & Config
-.env
-.env.local
-.env.production
-config.json
+# IDE
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db

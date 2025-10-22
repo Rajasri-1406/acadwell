@@ -1,0 +1,39 @@
+/* StudentSidebar.css */
+
+.student-sidebar {
+  @apply flex flex-col h-screen w-64 bg-black/30 backdrop-blur-xl border-r border-white/10 p-6;
+}
+
+/* Header */
+.sidebar-header {
+  @apply mb-10;
+}
+
+.sidebar-logo {
+  @apply text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent;
+}
+
+/* Navigation */
+.sidebar-nav ul {
+  @apply space-y-4;
+}
+
+.nav-item {
+  @apply flex items-center space-x-3 text-gray-300 hover:text-white cursor-pointer transition-colors px-2 py-2 rounded-lg;
+}
+
+.nav-icon {
+  @apply w-5 h-5;
+}
+
+/* Active item simulation */
+.nav-item.active {
+  @apply bg-white/10 text-white;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .student-sidebar {
+    @apply hidden;
+  }
+}
