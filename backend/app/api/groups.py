@@ -4,7 +4,7 @@ from flask_jwt_extended import jwt_required, get_jwt_identity
 from bson import ObjectId
 from datetime import datetime
 
-groups_bp = Blueprint("groups", __name__, url_prefix="/api/groups")
+groups_bp = Blueprint("groups", __name__)
 
 
 # ---------------- UTILS ----------------
